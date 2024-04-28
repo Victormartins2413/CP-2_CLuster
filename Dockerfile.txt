@@ -1,0 +1,14 @@
+# Use uma imagem Python como base
+FROM python:3.8-slim
+
+# Copie o script Python para dentro do contêiner
+COPY hello.py /app/
+
+# Defina o diretório de trabalho como /app
+WORKDIR /app
+
+# Instale as dependências do script (se houver)
+# RUN pip install -r requirements.txt
+
+# Comando para executar o script quando o contêiner for iniciado
+CMD ["python", "hello.py"]

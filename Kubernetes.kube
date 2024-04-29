@@ -1,0 +1,8 @@
+# Crie o diretório .kube em seu diretório de usuário
+mkdir "$env:USERPROFILE\.kube"
+
+# Copie o arquivo de configuração do Kubernetes para o diretório .kube
+Copy-Item -Path "C:\etc\kubernetes\admin.conf" -Destination "$env:USERPROFILE\.kube\config"
+
+# Altere as permissões do arquivo de configuração
+icacls "$env:USERPROFILE\.kube\config" /grant "$env:USERNAME:(R)"

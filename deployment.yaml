@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-python
-        image: <seu_usuario>/<seu_repositorio>:latest
+        image: Victormartins2413/CP-2_CLuster:latest
         ports:
         - containerPort: 8080

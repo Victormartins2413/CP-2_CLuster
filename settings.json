@@ -1,0 +1,3 @@
+{
+    "python.analysis.extraPaths": ["/caminho/para/sua/biblioteca/mysql-connector-python"]
+}

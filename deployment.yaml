@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-python
-        image: <seu_usuario>/<seu_repositorio>:latest
+        image: Victormartins2413/IA.png:latest  # Nome da imagem Docker
         ports:
-        - containerPort: 8080
+        - containerPort: 5000   # Defina a porta corretamente para corresponder à porta do Flask
